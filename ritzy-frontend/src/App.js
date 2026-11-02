@@ -8,7 +8,7 @@ function App() {
   const [error, setError] = useState(null);
 
   // We'll try 'localhost' instead of '127.0.0.1' as it's more reliable on some macOS setups
-  const API_BASE_URL = "http://localhost:8000";
+  const API_BASE_URL = "http://ritzy.dk";
 
   const fetchFeed = async () => {
     try {
@@ -39,7 +39,7 @@ function App() {
         {posts.length === 0 ? (
           <div className="empty-state">
             <p>No posts yet. Be the first to share something!</p>
-            <small>Tip: Add posts via http://localhost:8000/docs</small>
+            <small>Tip: Add posts via http://ritzy.dk/docs</small>
           </div>
         ) : (
           posts.map(post => (
